@@ -1,0 +1,7 @@
+CREATE TABLE IF NOT EXISTS users (
+    created_at TIMESTAMP WITH TIME ZONE NOT NULL DEFAULT NOW(),
+    updated_at TIMESTAMP WITH TIME ZONE NOT NULL DEFAULT NOW(),
+    id uuid PRIMARY KEY NOT NULL DEFAULT uuid_generate_v4(),
+    username TEXT NOT NULL,
+    password TEXT NOT NULL
+);
